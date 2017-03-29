@@ -4,8 +4,8 @@ By default, Finatra already provide metrics support through `finagle-stats`, in 
 
 ## Steps to integrate to Graphite:
 
-1. Add dependency library on `build.sbt`.
-2. Create/Copy GraphiteMetricsModule.scala into your project.
-3. Reference **GraphiteMetricsModule** into your server definition.
-4. Add all configuration prefixed with **metrics**.
+1. Add dependency library on [build.sbt](https://github.com/amura2406/finatra-metrics-graphite/blob/master/build.sbt#L50-L51).
+2. Create/Copy [GraphiteMetricsModule.scala](https://github.com/amura2406/finatra-metrics-graphite/blob/master/src/main/scala/com/github/amura/module/GraphiteMetricsModule.scala) into your project.
+3. Reference **GraphiteMetricsModule** into your server definition, in this case [APIServer.scala](https://github.com/amura2406/finatra-metrics-graphite/blob/master/src/main/scala/com/github/amura/server/APIServer.scala#L25).
+4. Add all configuration prefixed with [metrics](https://github.com/amura2406/finatra-metrics-graphite/blob/master/src/main/resources/conf/application.conf#L3-L9).
 5. Run the server !!!
